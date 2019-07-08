@@ -24,7 +24,6 @@ if __name__=='__main__':
 #    y_lin4 = 1.43 + 0.91021*t
 #    start_idx = np.where(x==1.75)[0][0]
 #    end_idx = np.where(x==2)[0][0]
-#    plt.plot(x[start_idx:end_idx], y[start_idx:end_idx], 'k*', x[start_idx:end_idx], y_lin1[start_idx:end_idx], 'b+', x[start_idx:end_idx], y_lin2[start_idx:end_idx], 'r-')
     plt.plot(t, y_lin2, 'r-', label='($\omega(t_1)$*(t - $t_2$) - $\omega(t_2)$*(t - $t_1$))/($t_1 - t_2$)')
     plt.plot(t, y_lin3, 'k-', label='1+$\omega(1)$*t/2')#, t, y_lin4, 'bo')
     plt.xlabel('$t (= 2/a)$, where $a = \log_n m$')
