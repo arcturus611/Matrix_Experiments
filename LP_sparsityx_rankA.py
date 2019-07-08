@@ -6,6 +6,9 @@ This program verifies the following very cool fact.
 Given an LP, minimize c^T x subject to Ax = b and x >= 0, 
 where rank(A) = r, 
 the minimizer x* satisfies nnz(x*) <= r. 
+
+(Proof: suppose not; then we have only a total of d-1 constraints 
+for a d-dimensional problem.)
 @author: arcturus
 """
 
