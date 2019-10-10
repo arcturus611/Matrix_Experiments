@@ -98,11 +98,12 @@ if __name__=='__main__':
     n = 25
     m = 2
     eps = 0.1
-    alpha = eps**2
+    alpha = 5# eps**2
     num_trials = 1000
     
     for i in range(num_trials):
-        Delta = np.random.uniform(eps/100, 1/2, n) #line 11 of Alg1 of Mahoney, Rao, Wang, Zhang.
+#        Delta = np.random.uniform(eps/100, 1/2, n) #line 11 of Alg1 of Mahoney, Rao, Wang, Zhang.
+        Delta = np.random.uniform(1, 25, n) #line 11 of Alg1 of Mahoney, Rao, Wang, Zhang.
         
         C = generate_C(n, m)
         x = generate_x(n)
